@@ -8,6 +8,6 @@ jobs:
 
     steps:
       - name: install gauge
-        runs: |
+        run: |
           npm install @getgauge/cli
           npx gauge --version
