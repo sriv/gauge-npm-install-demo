@@ -1,0 +1,13 @@
+name: install
+on: push
+
+jobs:
+  install:
+    name: install gauge
+    runs-on: windows-latest
+
+    steps:
+      - name: install gauge
+        runs: |
+          npm install @getgauge/cli
+          npx gauge --version
